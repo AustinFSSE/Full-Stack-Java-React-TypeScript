@@ -11,6 +11,9 @@ export class Rectangle extends Shape {
     getInfo(): string {
         return super.getInfo() + `, radius: ${this._width}, radius: ${this._height}`;
     }
+    calculateArea(): number {
+        return (this._width * this._height);
+    }
 
 
     get width(): number {

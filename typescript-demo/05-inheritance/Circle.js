@@ -27,6 +27,9 @@ var Circle = /** @class */ (function (_super) {
     Circle.prototype.getInfo = function () {
         return _super.prototype.getInfo.call(this) + ", radius: ".concat(this._radius);
     };
+    Circle.prototype.calculateArea = function () {
+        return this._radius * this._radius * Math.PI;
+    };
     Object.defineProperty(Circle.prototype, "radius", {
         get: function () {
             return this._radius;

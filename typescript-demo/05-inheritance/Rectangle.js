@@ -28,6 +28,9 @@ var Rectangle = /** @class */ (function (_super) {
     Rectangle.prototype.getInfo = function () {
         return _super.prototype.getInfo.call(this) + ", radius: ".concat(this._width, ", radius: ").concat(this._height);
     };
+    Rectangle.prototype.calculateArea = function () {
+        return (this._width * this._height);
+    };
     Object.defineProperty(Rectangle.prototype, "width", {
         get: function () {
             return this._width;
