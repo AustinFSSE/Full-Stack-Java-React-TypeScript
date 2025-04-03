@@ -35,6 +35,7 @@ export const Carousel = () =>
                         <ReturnBook/>
                     </div>
                 </div>
+            </div>
                 <button className={'carousel-control-prev'} type='button'
                         data-bs-target='#carouselExampleControls'
                         data-bs-slide={'prev'}>
@@ -53,14 +54,11 @@ export const Carousel = () =>
             <div className='d-lg-none mt-3'>
                 <div className={'row d-flex justify-content-center align-items-center'}>
                     <ReturnBook/>
-                    <ReturnBook/>
-                    <ReturnBook/>
                 </div>
             </div>
             <div className={'homepage-carousel-title mt-3'}>
                 <a className={'btn btn-outline-secondary btn-lg'} href={'#'}>View More</a>
             </div>
         </div>
-      </div>
     );
 }
