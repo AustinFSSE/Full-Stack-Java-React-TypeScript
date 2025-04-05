@@ -154,7 +154,7 @@ export const SearchBooksPage = () => {
                         {books.map(book=> {
                             return <SearchBook Book={book} key={book.id} />
                         })}
-                        </>
+                    </>
                         :
                         <div className={'m-5'}>
                             <h3>
