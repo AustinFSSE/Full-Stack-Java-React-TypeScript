@@ -26,5 +26,5 @@ public class Review {
     private Long bookId;
 
     @Column(name = "review_description")
-    private String review_description;
+    private String reviewDescription;
 }
