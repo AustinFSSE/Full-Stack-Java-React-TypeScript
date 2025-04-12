@@ -48,7 +48,7 @@ export const BookCheckoutPage = () => {
             setIsLoading(false);
             setHttpError(error.message);
         });
-    }, []);
+    }, [bookId]);
 
     useEffect(() => {
         const fetchBookReviews = async () => {
@@ -91,7 +91,7 @@ export const BookCheckoutPage = () => {
             setIsLoadingReviews(false);
             setHttpError(error.message);
         })
-    }, []);
+    }, [bookId]);
 
     if (isLoading || isLoadingReviews) {
         return(

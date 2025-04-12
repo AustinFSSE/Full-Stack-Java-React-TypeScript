@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import {HomePage} from "./layouts/homepage/HomePage";
 import {Navbar} from "./layouts/Navbar/Navbar";
-import {Footer} from "./layouts/footer/Footer";
+import {Footer} from "./layouts/Footer/Footer";
 import {SearchBooksPage} from "./layouts/SearchBooksPage/SearchBooksPage";
 import {Redirect, Route, Switch, useHistory} from "react-router-dom";
 import {BookCheckoutPage} from "./layouts/BookCheckoutPage/BookCheckoutPage";
@@ -44,10 +44,12 @@ export const App = () => {
                     <Route path={'/checkout/:bookId'}>
                         <BookCheckoutPage/>
                     </Route>
-                    <Route path={'/login'} render={
-                        () => <LoginWidget config={oktaConfig}/>
-                    }/>
-                    <Route path={'/login/callback'} component={LoginCallback} />
+                    <Route path='/login'
+                           render={ () => <LoginWidget config={oktaConfig}/>}
+                    />
+                    <Route path='/login/callback'
+                           component={LoginCallback}
+                    />
                   </Switch>
               </div>
             <Footer/>
